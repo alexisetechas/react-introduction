@@ -1,6 +1,8 @@
+import styles from './Text.module.css'
+
 function Text(){
     return(
-        <div>
+        <div className={styles.textContainer}>
             <p>This is an component with a text</p>
         </div>
     )
