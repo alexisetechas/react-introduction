@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <p>Hello, my name is <b>{a}</b> and im initialing the web development in React.</p>
       <h3>SUM RESULT : {sum(1, 4)}</h3>
       <img src={b}/>
+      <HelloWorld/>
     </div>
   );
 }
