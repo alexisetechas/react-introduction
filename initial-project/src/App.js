@@ -1,21 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import HelloWorld from './components/HelloWorld'
+import SayMyName from './components/SayMyName'
+import HelloWorld from './components/HelloWorld';
+import Person from './components/Person';
 
 function App() {
-
-  const a = "Alexis"
-  const b = "https://th.bing.com/th/id/R.9d5ba799ded60b4429169d8711f3f5f8?rik=%2bD2BYXv3N3knYA&riu=http%3a%2f%2fovernature.net%2fdownload%2f143-paisagem-foto-hd-inebriante-sol-amanhecer.jpg&ehk=XP9O%2b4O8FUSoZ5fifJevY3pall5ziuo9nzNQIOtvhPk%3d&risl=&pid=ImgRaw&r=0"
-  function sum(a, b){
-    return a + b
-  }
+  const nome = "Maria"
   return (
     <div className="App">
-      <h1>React Initial Project</h1>
-      <p>Hello, my name is <b>{a}</b> and im initialing the web development in React.</p>
-      <h3>SUM RESULT : {sum(1, 4)}</h3>
-      <img src={b}/>
-      <HelloWorld/>
+      <SayMyName nome="Alexis"/>
+      <SayMyName nome={nome}/>
+      <Person nome= "Rodrigo " idade = "28" profissao="programador" foto="https://static1.squarespace.com/static/5c3e25923e2d0977a884f82c/5c3f4b9e010685e0e261593a/5c3f4e6a010685e0e261b6ea/1547652714741/IMG_1322.jpg?format=original"/>
     </div>
   );
 }
